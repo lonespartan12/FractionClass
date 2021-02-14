@@ -69,6 +69,10 @@ class Fraction:
         secondnum = other.num * self.den
 
         return firstnum == secondnum
+    def getNum(self):
+      return self.num
+    def getDen(self):
+      return self.den
 
 #def main():
 x = Fraction(1, 2)
@@ -89,3 +93,5 @@ print(f'Less Than {x}+{y}: ')
 print(x < y)
 print(f'equals {x}+{y}: ')
 print(x == y)
+print(x.getNum())
+print(x.getDen())
